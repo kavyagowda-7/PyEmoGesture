@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PyEmoGesture</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      *{
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to top, #a8edea 0%, #d89ed1 100%);
+      }
+      header,
+      section,
+      footer {
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      footer{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+
+      }
+      header {
+        margin: 50px;
+        margin-top: 100px;
+        background: #474747;
+        color: white;
+        position: relative;
+        padding: 10px;
+        padding-top: 70px;
+        border-radius: 20px;
+      }
+      header h1 {
+        font-size: 3em;
+        margin-top: -50px;
+        margin-bottom: 5px;
+      }
+      header p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+      .cta-btns button {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+      .section-title {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      .features {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .feature-box {
+        width: 40%;
+        min-width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin: 10px;
+      }
+      #about p {
+        text-align: left;
+      }
+      .container p{
+        padding: 30px;
+        font-size: x-large;
+        
+      }
+      .tech-stack,
+      .applications {
+        padding: 20 px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .tech-item {
+        margin: 10px;
+        text-align: center;
+      }
+      .demo-img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 8px;
+        margin: 10px;
+      }
+      form input,
+      form textarea {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      form button {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      footer {
+        background: #f0f0f0;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #222;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        padding: 30px 0;
+        z-index: 1000;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: none;
+        color: rgb(255, 7, 7);
+      }
+      #icon{
+        color: rgb(32, 38, 38);
+        border: #111;
+      }
+      #research p{
+        padding: 10px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#tech">Tech Stack</a>
+      <a href="#demo">Result</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Homepage -->
+    <header>
+      <h1><span style="color: red;">Py</span><span style="color:rgb(2, 255, 2)">Emo</span><span style="color: yellow;">Gesture</span></h1>
+      <span>
+        <img src="image.png" alt="Emotion Detection Animation" width="300" />
+      </span>
+      <p>Enabling Machines to Recognize Human Emotions and Gestures</p>
+      <p>
+        A Deep Learning-based system for real-time emotion and gesture
+        recognition.
+      </p>
+      
+    </header>
+    <hr>
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+      <h2 class="section-title"><span style="color: red;">A</span>BOUT</h2>
+      <p>
+        PyEmoGesture is an AI-powered system that detects human emotions and
+        hand gestures in real-time using cutting-edge image processing and deep
+        learning techniques. Designed to enhance human-computer interaction, our
+        project bridges the gap between human expression and machine
+        understanding.
+      </p>
+
+      <p>
+        Whether it's interpreting facial expressions like happiness, sadness, or
+        anger, or recognizing hand gestures like peace or rock, PyEmoGesture
+        provides fast, reliable, and intuitive recognition capabilities. Our
+        mission is to develop innovative, real-time recognition systems that can
+        be used in various sectors—healthcare, education, gaming, virtual
+        reality, and mental wellness. We aim to make machines more responsive,
+        emotionally intelligent, and accessible to human behavior
+      </p>
+      </div>
+      <hr>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <h2 class="section-title"><span style="color: red;">F</span>EATURES</h2>
+      <div class="features">
+        <div class="feature-box">
+          <h3><i class="fas fa-smile"></i> Emotion Recognition</h3>
+          <p>
+            Detects emotions from images/live video using CNN, DeepFace, OpenCV.
+          </p>
+          <p>Recognized Emotions: Happy, Angry, Neutral, etc.</p>
+        </div>
+        <div class="feature-box">
+          <h3><i class="fas fa-hand-paper"></i> Gesture Recognition</h3>
+          <p>Real-time hand gesture recognition using MediaPipe, OpenCV.</p>
+          <p>Gestures like "rock", "peace", etc.</p>
+        </div>
+      </div>
+    </section>
+<hr>
+    <!-- Technology Stack -->
+    <section id="tech">
+      <h2 class="section-title"><span style="color: red;">T</span>ECHNOLOGY <span style="color: red;">S</span>TACK</h2>
+      <div class="tech-stack">
+        <i id="icon" class="fa-brands fa-python" style="font-size:500%"> </i>
+      </br>
+        <!-- <i class="fa-brands fa-openai">Open CV</i> -->
+        <div class="tech-item">Python</div>
+        <div class="tech-item">TensorFlow</div>
+        <div class="tech-item">Keras</div>
+        <div class="tech-item">DeepFace</div>
+        <div class="tech-item">MediaPipe</div>
+      </div>
+    </section>
+<hr>
+
+    <!-- Demo Screens -->
+    <section id="demo">
+      <h2 class="section-title"><span style="color: red;">R</span>ESULT <span style="color: red;">S</span>NAPSHOT</h2>
+      <img
+        class="demo-img"
+        src="angry.jpg"
+        alt="Detected Emotion: Happy"
+      />
+      <img
+        class="demo-img"
+        src="surprise.jpg"
+        alt="Detected Emotion: Happy"
+      />
+      <img
+        class="demo-img"
+        src="neutral.jpg"
+        alt="Detected Emotion: Happy"
+      />
+      <img
+        class="demo-img"
+        src="happy.jpg"
+        alt="Detected Emotion: Happy"
+      />
+      <img
+        class="demo-img"
+        src="callMe.jpg"
+        alt="Detected Emotion: Happy"
+      />
+      <img
+        class="demo-img"
+        src="peace.jpg"
+        alt="Detected Emotion: Happy"
+      />
+      <img
+        class="demo-img"
+        src="fist.jpg"
+        alt="Detected Emotion: Happy"
+      />
+      <img
+        class="demo-img"
+        src="rock.jpg"
+        alt="Detected Emotion: Happy"
+      />
+      
+    </section>
+
+    <hr>
+
+    <section id="research">
+      <h2 class="section-title"><span style="color: red;">R</span>ESEARCH</h2>
+      <p>
+        <strong>»</strong>  X. Huang, J. Kortelainen, G. Zhao, X. Li, A. Moilanen, T. Seppänen, M. Pietikäinen Multi-modal 
+emotion analysis from facial expressions and electroencephalogram Comput Vis Image Understand, 
+147 , pp. 114-124, feb 2021. 
+      </p>
+      <p><strong>» </strong> D. Keltiner, P. EkrmanM. Lewis, J.M. Haviland Jones (Eds.), Facial expression of emotion, 
+handbook of emotions, Gilford Press, New York, pp. 236-249. </p>
+      <p><strong>»</strong>  Samta Jain Goyal, Arvind Kumar Upadhyay, Rakesh Singh Jadon Facial Emotion Recognition 
+through Hand Gesture and Its Position Surrounding The Face. Feb, 2019. </p>
+      <p><strong>»</strong>  Meenakshi PanwarHand Gesture recognition based on shape parameters. </p>
+      <p><strong>»</strong>  Md Abdur Rahim 1, Abu Saleh Musa Miah2, Abu Sayeed 3, Jungpil Shin4 Hand Gesture 
+Recognition Based on Optimal Segmentation in Human-Computer Interaction 2020. </p>
+      <p><strong>»</strong>  Zhou Ren, Jingjing Meng, Junsong Yuan School of EEE, Nanyang Technological University Depth 
+Camera Based Hand Gesture Recognition and its Applications in Human-Computer-Interaction. </p>
+      <p><strong>»</strong>   Rishabh Agrawal, Nikita Gupta Real Time Hand Gesture Recognition for Human Computer 
+Interaction, 2016. </p>
+      <p><strong>»</strong>  Kin Yun Lum, Yeh Huann Goh, Yi Bin Lee American Sign Language Recognition Based on 
+MobileNetV2 </p>
+      <p><strong>»</strong>  Supaporn Bunrit, Nittaya Kerdprasop, and Kittisak Kerdprasop Evaluating on the Transfer 
+Learning of CNN Architectures to a Construction Material Image Classification Task 2019. </p>
+      <p><strong>»</strong>   Vishwanath C. Burkapalli1 and Priyadarshini C. Patil2V Gent, P. (2016). Emotion Recognition 
+with Python, OpenCV and a Face Dataset. A tech blog about fun things with Python and embedded 
+electronics.</p>
+      <p><strong>»</strong>   Kanade, T., Cohn, J. F., & Tian, Y. (2000). Comprehensive database for facial expression 
+analysis. Proceedings of the Fourth IEEE International Conference on Automatic Face and Gesture 
+Recognition (FG'00), Grenoble, France, 46-53. </p>
+      <p><strong>»</strong>  Lucey, P., Cohn, J. F., Kanade, T., Saragih, J., Ambadar, Z., & Matthews, I. (2010). The Extended 
+Cohn-Kanade Dataset (CK+): A complete expression dataset for action unit and emotion-specified 
+expression. Proceedings of the Third International Workshop on CVPR for Human Communicative 
+Behavior Analysis (CVPR4HB 2010), San Francisco, USA, 94-101. </p>
+      <p><strong>»</strong>  Kanade, Cohn, &Tian (2000) and Lucey et al. (2010) in any paper of  
+mine or my collaborators that makes any use of the database. The  
+references are: Kanade, T., Cohn, J. F., & Tian, Y. (2000). Comprehensive database  
+for facial expression analysis. Proceedings of the Fourth IEEE  
+International Conference on Automatic Face and Gesture Recognition  
+(FG'00), Grenoble, France, 46-53. </p>
+      <p><strong>»</strong>  Kari Pulli, Anatoly Baksheev, Kirill Kornyakov, and Victor Eruhimov. 2012. Realtime Computer 
+Vision with OpenCV. Queue 10, 4, Pages 40 (April 2012), 17 pages. DOI: 
+http://dx.doi.org/10.1145/2181796.2206309. </p>
+      <p><strong>»</strong>  Kim &Joo, Young Hoon & Bae Park, Jin. (2015). Emotion Detection Algorithm Using Frontal 
+Face Image . </p>
+      <p><strong>»</strong>  Ashwini Ann Verghese, Jacob P Cherian & Jubilant J Kizhakkethottam 2015.Overview on 
+Emotion Recognition System. INSPEC Accession Number: 15508917.</p>
+    </section>
+<hr>
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="section-title"><span style="color: red;">C</span>ONTACT <span style="color: red;">M</span>E</h2>
+      <form>
+        <input type="text" placeholder="Name" required style="border-radius: 10px; background-color:#f6dae4;"/><br />
+        <input type="email" placeholder="Email" style="border-radius: 10px; background-color:#f6dae4" required /><br />
+        <textarea placeholder="Message" rows="4" style="border-radius: 10px; background-color:#f6dae4" required></textarea><br />
+        <button type="submit" style="border-radius: 10px; background-color:rgb(228, 110, 126)"><strong>Send</strong></button>
+      </form>
+      <p>
+        GitHub: <a href="#">https://github.com/kavyagowda-7</a>  |  LinkedIn:
+        <a href="#">https://www.linkedin.com/in/hellokavya/</a>
+      </p>
+    </section>
+    
+    
+      
+    <footer style="background-color: #474747; color:white; padding:30px;">© Copyright 2025 Kavya B N <a href="#" class="top"><i class='bx bx-up-arrow-alt' style="color:red; font-size:200%; background-color:rgb(203, 175, 180); border-radius:10px; float:right; "></i></a> </footer>
+    
+  
+  </body>
+</html>
